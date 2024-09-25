@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    
+}
+
+.conteudo{
+    max-width: 2080px;
+    display: flex;
+ justify-content: center;
+margin: 0 auto;
+align-items: center;
+
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: 1px;
+    height: 80px;
+     
+}
+
+.logo,.sociais{
+    width: 25%;
+    
+}
+
+.logo img{
+    width: 150px;
+    cursor: grab;
+    height: 70px;
+    
+
+   
+}
+
+.menu{
+    width: 50%;
+    
+    
+}
+
+.menu nav a{
+   
+
+color: #fff;
+text-decoration: none;
+padding-right: 50px;
+font-size: 18px;
+position: relative;
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #e00b0bc6, #0f0c0c);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+
+}
+
+
+
+.sociais button {
+    width: 40px;
+    height: 40px;
+    background-image:  linear-gradient(45deg, rgb(179, 15, 15), #0e0505eb);
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: grab;
+}
+
+.sociais button i{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+body {
+   display: flexbox;
+   justify-content: center;
+   align-items: center;
+   background-image: url(img/1.jpg);
+   background-size:cover;
+   background-position: center;
+   
+
+}
+
+.container {
+  
+   display: flexbox;
+   width: 350px;
+   background-color: transparent ;
+   border: 2px solid rgba(255, 255, 255, 0.2);
+   border-radius: 10px;
+   color: rgb(255, 255, 255);
+   padding: 10px 10px;
+   box-shadow: rgba(219, 6, 9, 0.314) 0px 30px 60px -12px inset, rgba(43, 28, 28, 0.288) 0px 18px 36px -18px inset;
+height: 450px;
+   margin: 100px 800px;
+   backdrop-filter: blur (50px);
+
+}
+
+.container h1 {
+   font-size: 36px;
+   text-align: center;
+}
+
+.input-box {
+   position: relative;
+   width: 100%;
+   height: 50px;
+   margin: 30px 0;
+}
+
+.input-box input {
+   border: 2px solid rgba(255, 255, 255, .2)  ;
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   border: 2px solid;
+   border-radius: 40px;
+   outline: none;
+   font-size: 16px;
+   color: rgba(255, 255, 255);
+   padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+
+   color: #c5c5c5;
+}
+
+.input-box i {
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 20px;
+   color: #fff;
+}
+
+.remember-forgot {
+   display: flex;
+   justify-content: space-between;
+}
+
+.remember-forgot label input {
+   accent-color: hsl(233, 43%, 28%);
+   margin-right: 5px;
+}
+
+.remember-forgot a {
+   text-decoration: none;
+   color:#fff;
+}
+
+.remember-forgot a:hover {
+   text-decoration: underline;
+}
+
+.login {
+    border-radius: 100px;
+    width: 80%;
+   height:50px;
+   border: none;
+   cursor: grab;
+   font-size: 20px;
+   color: #10065be2;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+   font-weight: 600;
+    background-color: #fff;
+   margin: 20px;
+    padding: 10px;
+}
+
+.login:hover {
+   background-color: transparent;
+   border: 2px solid rgba(255, 255, 255, .2);
+   color: #fff;
+   transition: 0.5s;
+}
+ 
+
+.register-link{
+   font-size: 14px;
+   text-align: center;
+   margin: 20px 0 15px;
+}
+
+.register-link a {
+text-decoration: none;
+color: rgb(90, 90, 91);
+font-weight: 600;
+}
+
+.register-link a:hover{
+
+   text-decoration: underline;
+}
